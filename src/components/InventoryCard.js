@@ -1,13 +1,25 @@
 import React from "react"
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
 
-function InventoryCard({ key, brand, model, image }) {
+function InventoryCard({ id, brand, model, image }) {
 
     return (
-        <div>
-            <h2>{brand} {model}</h2>
-            <img key={key} src={image} alt={model} />
-        </div>
-    )
+        <Container>
+            <Card key={id} style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={image} />
+                <Card.Body>
+                    <Card.Title>{brand} {model}</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
+        </Container>
+  );
 }
 
 export default InventoryCard

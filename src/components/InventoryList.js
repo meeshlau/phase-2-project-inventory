@@ -5,7 +5,7 @@ function InventoryList({ inventory }) {
     return (
         <div>
             {inventory.map((inv) => {
-                <InventoryCard key={inv.id} brand={inv.brand} model={inv.model} image={inv.image}/>
+                return <InventoryCard key={inv.id} brand={inv.brand} model={inv.model} image={inv.image}/>
             })}
             
         </div>
