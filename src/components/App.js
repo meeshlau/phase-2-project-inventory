@@ -1,6 +1,6 @@
-import './App.css';
 import React, { useEffect, useState } from "react"
 import InventoryContainer from "./InventoryContainer"
+import '../App.css';
 
 function App() {
   const [inventory, setInventory] = useState([])
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Hello World</h1>
-        <InventoryContainer />
+        <InventoryContainer inventory={inventory} />
       </header>
     </div>
   );
