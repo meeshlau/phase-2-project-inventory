@@ -1,33 +1,45 @@
 import React, { useState } from "react"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Cart from "./Cart"
 
-function InventoryCard({ id, brand, model, image }) {
+function InventoryCard({ id, brand, model, image, inventory }) {
     const [stock, setStock] = useState(true)
+    const [cart, setCart] = useState([])
 
     function inStock() {
         setStock(!stock)
     }
-    function onClick() {
+    function onClickAdd(e) {
         inStock()
+        if (stock === true) {
+            return inventory.filter(() => {
+                setCart(e.target)
+            })
+        }
     }
 
+    function onClickRemove(e) {
+        inStock()
+        console.log(e.target)
+        }
+    
+
     return (
-        <Card key={id} style={{ width: '18rem' }}>
+        <div>
+        <Card style={{ width: '18rem' }} key={id}>
             <Card.Img variant="top" src={image} />
             <Card.Body>
                 <Card.Title>{brand} {model}</Card.Title>
-                {/* <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text> */}
                 {stock ? (
-                <Button variant="primary" onClick={onClick}>Add to Cart</Button>
+                <Button variant="primary" onClick={onClickAdd}>Add to Cart</Button>
                 ) : (
-                <Button>added!</Button>
+                <Button onClick={onClickRemove}>Remove from Cart</Button>
                 )}
             </Card.Body>
         </Card>
+        <Cart cart={cart}/>
+        </div>
   );
 }
 
