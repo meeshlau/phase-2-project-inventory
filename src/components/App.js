@@ -22,18 +22,6 @@ function App() {
 
   return (
     <div>
-      <NavBar />
-      <Switch>
-        <Route exact path="/search">
-          <Search />
-        </Route>
-        <Route exact path="/addinventoryform">
-          <AddInventoryForm />
-        </Route>
-        {/* <Route exact path="/">
-          <Home />
-        </Route> */}
-      </Switch>
       <Container>
         <AddInventoryForm setInventory={setInventory} inventory={inventory} />
         <Search  setSearch={setSearch} />
