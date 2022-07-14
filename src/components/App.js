@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react"
-import InventoryList from "./InventoryList"
-import Cart from "./Cart"
+import { Route, Switch } from "react-router-dom";
+import Search from "./Search"
 import AddInventoryForm from"./AddInventoryForm"
 import '../App.css';
+import NavBar from "./NavBar"
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import InventoryList from "./InventoryList"
+
 
 function App() {
   const [inventory, setInventory] = useState([])
-  
+  const [search, setSearch] = useState("")
   
   useEffect(() => {
     fetch("http://localhost:3000/equipment")
@@ -18,23 +18,29 @@ function App() {
     .then((inv) => setInventory(inv))
   }, [])
 
+  const invToRender = inventory.filter(inv => inv.model.toLowerCase().includes(search.toLowerCase()))
+
   return (
-    <Container>
-      <Navbar bg="light" expand="lg">
+    <div>
+      <NavBar />
+      <Switch>
+        <Route exact path="/search">
+          <Search />
+        </Route>
+        <Route exact path="/addinventoryform">
+          <AddInventoryForm />
+        </Route>
+        {/* <Route exact path="/">
+          <Home />
+        </Route> */}
+      </Switch>
       <Container>
-        <Navbar.Brand href="#home">Y. Hata Equipment Inventory</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#add-new">Add New</Nav.Link>
-            <Nav.Link href="#cart">Cart</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+        <AddInventoryForm setInventory={setInventory} inventory={inventory} />
+        <Search  setSearch={setSearch} />
+        <InventoryList inventory={invToRender}/>
       </Container>
-      </Navbar>
-      <InventoryList inventory={inventory}/>
-    </Container>
+    </div>
+   
   );
 }
 
