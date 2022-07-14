@@ -34,6 +34,7 @@ function AddInventoryForm({ setInventory, inventory }) {
         })
         .then((r) => r.json())
         .then((addedInv) => setInventory([...inventory, addedInv]))
+        
     }
 
     return(
