@@ -5,9 +5,8 @@ import Card from 'react-bootstrap/Card';
 function InventoryCard({ id, brand, model, image }) {
     const [stock, setStock] = useState(true)
 
-    function onClick(e) {
+    function onClick() {
        setStock(!stock)
-       console.log(stock)
     }
 
     return (

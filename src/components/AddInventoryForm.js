@@ -34,7 +34,7 @@ function AddInventoryForm({ setInventory, inventory }) {
         })
         .then((r) => r.json())
         .then((addedInv) => setInventory([...inventory, addedInv]))
-        
+        e.target.reset()
     }
 
     return(
@@ -43,15 +43,30 @@ function AddInventoryForm({ setInventory, inventory }) {
             <Form onSubmit={onSubmit}>
                 <Row>
                     <Col>
-                    <Form.Control type="text" name="brand" placeholder="Brand" onChange={handleAddInv} />
+                    <Form.Control 
+                    type="text" 
+                    name="brand" 
+                    placeholder="Brand" 
+                    onChange={handleAddInv} 
+                    />
                     </Col>
                     <Col>
-                    <Form.Control type="text" name="model" placeholder="Model" onChange={handleAddInv} />
+                    <Form.Control 
+                    type="text" 
+                    name="model" 
+                    placeholder="Model" 
+                    onChange={handleAddInv} 
+                    />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                    <Form.Control type="text" name="image" placeholder="Image url" onChange={handleAddInv} />
+                    <Form.Control 
+                    type="text" 
+                    name="image" 
+                    placeholder="Image url" 
+                    onChange={handleAddInv} 
+                    />
                     </Col>
                 </Row>
                 <Button variant="primary" type="submit">

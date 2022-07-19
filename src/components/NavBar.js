@@ -9,14 +9,14 @@ import Navbar from 'react-bootstrap/Navbar';
 function NavBar() {
     return (
         <Container>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light">
                 <Container>
                     <Navbar.Brand to="/home">Y. Hata</Navbar.Brand>
                     <Nav className="me-auto">
-                        <NavLink to="/home">Home</NavLink>
+                        <NavLink to="/home">Home</NavLink><br />
                         <NavLink to="/inventory">Inventory </NavLink> 
                         {/* <NavLink to="/search">Search</NavLink> */}
-                        <NavLink to="/addinventoryform">Add Inventory</NavLink>
+                        <NavLink to="/addinventory">Add Inventory</NavLink>
                     </Nav>
                 </Container>
             </Navbar>

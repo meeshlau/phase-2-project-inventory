@@ -25,7 +25,7 @@ function App() {
       <Container>
         <NavBar />
         <Switch>
-          <Route exact path="/addinventoryform">
+          <Route exact path="/addinventory">
             <AddInventoryForm setInventory={setInventory} inventory={inventory} />
           </Route>
           <Route exact path="/home">

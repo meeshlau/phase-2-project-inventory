@@ -1,0 +1,106 @@
+{
+  "equipment": [
+    {
+      "id": 1,
+      "brand": "HP",
+      "model": "EliteBook 840 G8 Notebook",
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07954370.png"
+    },
+    {
+      "id": 2,
+      "brand": "Dell",
+      "model": "Latitude 5520 Laptop",
+      "image": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/notebooks/latitude-notebooks/latitude-15-5520/media-gallery/la5520nt_cnb_05000ff090_gy_5000x5000_gettyimages-1254825733.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=584&qlt=100,0&resMode=sharp2&size=584,402"
+    },
+    {
+      "id": 3,
+      "brand": "Dell",
+      "model": "27 Monitor",
+      "image": "https://i.dell.com/is/image/DellContent//content/dam/images/products/electronics-and-accessories/dell/monitors/s-series/s2721hsx/s2721hsx-cfp-00025lf095-bk.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=426&qlt=100,0&resMode=sharp2&size=426,402"
+    },
+    {
+      "id": 4,
+      "brand": "Dell",
+      "model": "24 Monitor",
+      "image": "https://i.dell.com/is/image/DellContent//content/dam/images/products/electronics-and-accessories/dell/monitors/s-series/s2421hsx/s2421hsx-cfp-000025rf095-bk.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=448&qlt=100,0&resMode=sharp2&size=448,402"
+    },
+    {
+      "id": 5,
+      "brand": "HP",
+      "model": "M22f FHD Monitor",
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07063982.png"
+    },
+    {
+      "id": 6,
+      "brand": "HP",
+      "model": "M24fw FHD Monitor",
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07063002.png"
+    },
+    {
+      "id": 7,
+      "brand": "TrippLite",
+      "model": "4-Outlet Protect It! Surge Suppressor with 4-ft Cord",
+      "image": "https://snpi.dell.com/snp/images/products/large/en-us~A0385734/A0385734.jpg"
+    },
+    {
+      "id": 8,
+      "brand": "TrippLite",
+      "model": "HDMI Male to Male Gold Digital Video Cable",
+      "image": "https://snpi.dell.com/snp/images/products/large/en-us~A6947949/A6947949.jpg"
+    },
+    {
+      "id": 9,
+      "brand": "HP",
+      "model": "USB-C to USB-A Hub",
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05382024.png"
+    },
+    {
+      "id": 10,
+      "brand": "Dell",
+      "model": "Dual Monitor Arm - MDA20",
+      "image": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/peripherals/output-devices/dell/desktop-accessories/mda20/global-spi/ng/dell-dual-monitor-arm-mda20-details-hero-500-ng.psd?qlt=95&fit=constrain,1&hei=500&wid=500&fmt=jpg"
+    },
+    {
+      "id": 11,
+      "brand": "HP",
+      "model": "Dual Display Stand",
+      "image": "https://c1.neweggimages.com/ProductImage/A29C_1_20170816953526301.jpg"
+    },
+    {
+      "id": 12,
+      "brand": "HP",
+      "model": "230 Wireless Mouse and Keyboard Combo",
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06980022.png"
+    },
+    {
+      "id": 13,
+      "brand": "HP",
+      "model": "Thunderbolt Dock 120W G4",
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08022137.png?imwidth=270&imdensity=1"
+    },
+    {
+      "id": 14,
+      "brand": "Dell",
+      "model": "Wireless Keyboard and Mouse",
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/peripherals/input-devices/dell/keyboards/km3322w/media-gallery/keyboard-mouse-km3322w-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=676&qlt=100,0&resMode=sharp2&size=676,402"
+    },
+    {
+      "id": 15,
+      "brand": "Dell",
+      "model": "Docking Station - WD19S 180W",
+      "image": "https://i.dell.com/is/image/DellContent//content/dam/images/products/electronics-and-accessories/dell/docks-and-stands/wd19s-130w/wd19s-130w-gnb-shot04-bk-singleusbc.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=893&qlt=100,0&resMode=sharp2&size=893,402"
+    },
+    {
+      "id": 16,
+      "brand": "Dell",
+      "model": "Pro Wireless Headset - WL5022",
+      "image": "https://i.dell.com/is/image/DellContent//content/dam/images/products/electronics-and-accessories/dell/headphones/wl5022/wl5022-xau-02-bk.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=406&qlt=100,0&resMode=sharp2&size=406,402"
+    },
+    {
+      "brand": "Mac",
+      "model": "Macbook Pro",
+      "image": "https://i5.walmartimages.com/asr/bd155aad-6c16-4b21-9bca-c0855b445b85.ed67d0370dff83c2d695e4bcf58d7ce0.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "id": 17
+    }
+  ]
+}
