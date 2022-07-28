@@ -74,7 +74,6 @@ function AddInventoryForm({ setInventory, inventory }) {
                 </Button>
             </Form>
         </Container>
-
     )
 }
 

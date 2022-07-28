@@ -4,8 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-
-
 function NavBar() {
     return (
         <Container>
@@ -13,15 +11,13 @@ function NavBar() {
                 <Container>
                     <Navbar.Brand to="/home">Y. Hata</Navbar.Brand>
                     <Nav className="me-auto">
-                        <NavLink to="/home">Home</NavLink><br />
+                        <NavLink to="/home">Home</NavLink>
                         <NavLink to="/inventory">Inventory </NavLink> 
-                        {/* <NavLink to="/search">Search</NavLink> */}
                         <NavLink to="/addinventory">Add Inventory</NavLink>
                     </Nav>
                 </Container>
             </Navbar>
         </Container>
-    
     )
 }
 

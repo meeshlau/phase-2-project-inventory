@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { Route, Switch } from "react-router-dom";
-import Search from "./Search"
 import AddInventoryForm from"./AddInventoryForm"
 import '../App.css';
 import NavBar from "./NavBar"
@@ -10,21 +9,20 @@ import Home from "./Home"
 
 function App() {
   const [inventory, setInventory] = useState([])
-    const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("")
     
-    useEffect(() => {
-      fetch("http://localhost:3000/equipment")
-      .then((r) => r.json())
-      .then((inv) => setInventory(inv))
-    }, [])
+  useEffect(() => {
+    fetch("http://localhost:3000/equipment")
+    .then((r) => r.json())
+    .then((inv) => setInventory(inv))
+  }, [])
   
-    const invToRender = inventory.filter(inv => inv.model.toLowerCase().includes(search.toLowerCase()))
+  const invToRender = inventory.filter(inv => inv.model.toLowerCase().includes(search.toLowerCase()))
 
   return (
     <div>
       <Container>
         <NavBar />
-        <Switch>
           <Route exact path="/addinventory">
             <AddInventoryForm setInventory={setInventory} inventory={inventory} />
           </Route>
@@ -37,7 +35,6 @@ function App() {
           <Route exact path="/inventory">
             <InventoryList inventory={invToRender} setSearch={setSearch}/>
           </Route>
-        </Switch>
       </Container>
     </div>
    

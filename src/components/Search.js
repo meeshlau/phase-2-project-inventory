@@ -3,7 +3,6 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 
 function Search({ setSearch }) {
-
     return (
         <Container>
             <Form>
@@ -17,7 +16,7 @@ function Search({ setSearch }) {
             </Form.Group>
             </Form>
         </Container>
-      );
+    );
 }
 
 export default Search;
